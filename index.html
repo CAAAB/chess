@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess960 with Stockfish</title>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" integrity="sha384-q94+BZRMccApcD96kBaQaixAGmrgdHNxJr3LFNhFTt68qBSRLEVABqMpj7/3cUUB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="board" style="width: 400px"></div>
+    <div id="status">Loading...</div>
+    <div id="engineStatus">Engine Status: Initializing...</div>
+    <div>
+        <input type="text" id="fenInput" placeholder="Enter FEN string" size="70" />
+        <button id="setFenButton">Set FEN</button>
+    </div>
+    <div>
+        <button id="newGameButton">New Random Game</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3LryDRnmMMGppZyoIY/LCgH2dUrfeiLYll" crossorigin="anonymous"></script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
